@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --exec node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-google": "^0.9.1",
+    "nodemon": "^1.12.1"
   }
 }
