@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "ui5ts.manifestlocation": "webapp\\node_modules\\openui5.runtime.downloader\\lib\\resources\\sap\\ui\\core\\manifest.json"
 }
