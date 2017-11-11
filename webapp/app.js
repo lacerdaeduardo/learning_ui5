@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var exec = require('child_process').exec;
 
 var app = express();
 
@@ -13,4 +14,7 @@ app.get('/', function(req, res) {
 
 app.listen(3000, function() {
     console.log('Express server running on port 3000');
+
+    exec('chrome.exe --kiosk "localhost:'+3000+'"',
+        function(err, stdout, stderr) {});
 });
