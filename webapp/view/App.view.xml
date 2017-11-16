@@ -53,7 +53,7 @@
 								<content>
 									<List headerText="{i18n>productListTitle}" items="{/ProductSet}">
 										<items>
-											<ObjectListItem title="{Name}" number="{Price}" intro="{ProductID}"/>
+											<ObjectListItem title="{Name}" number="{Price}" numberState="{= ${Price} > 500 ? 'Error' : 'Success'}" intro="{ProductID}"></ObjectListItem>
 										</items>
 									</List>
 								</content>
